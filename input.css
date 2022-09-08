@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     color: white;
   }
 
@@ -298,7 +298,7 @@ transition: transform ease-in-out 1500ms;
 
 @media(min-width:376px) and (max-width:640px){
     html{
-        font-size: 13px;
+        font-size: 14px;
     }
     .hash-form{
         grid-template-columns: 1fr;
@@ -316,7 +316,7 @@ transition: transform ease-in-out 1500ms;
 
 @media(max-width:375px){
     html{
-        font-size: 12px;
+        font-size: 13px;
     }
     .hash-form{
         grid-template-columns: 1fr;
