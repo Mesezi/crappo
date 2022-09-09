@@ -826,9 +826,9 @@ video {
   text-align: center;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-5xl {
@@ -921,7 +921,7 @@ header{
 }
 
 .btn-hover:hover{
-  background-color: #3671E9;
+  background-color: #1a51bf;
 }
 
 .menu-btn{
@@ -961,6 +961,7 @@ header .inline-block .fa-chevron-right{
   top: 52%;
   right: 20%;
   transform: scale(.9);
+  z-index: 3;
 }
 
 #line4{
@@ -1055,7 +1056,18 @@ header .inline-block .fa-chevron-right{
 
 .mining{
   display: none;
-  font-size: .8rem;
+  align-items: center;
+  gap:0 .5rem;
+}
+
+.mining i{
+  height: 1.5rem;
+  width:1.5rem;
+  line-height: 1.5rem;
+  border-radius: 100%;
+  text-align: center;
+  background-color: white;
+  color: #3671E9;
 }
 
 .trade .currency > div:hover{
@@ -1067,7 +1079,7 @@ header .inline-block .fa-chevron-right{
 }
 
 .trade .currency > div:hover > .mining{
-  display: inline-block;
+  display: flex;
 }
 
 .trade .currency > div:hover > .arrow{
@@ -1084,7 +1096,7 @@ header .inline-block .fa-chevron-right{
 }
 
 .trade .currency .current .mining{
-  display: inline-block;
+  display: flex;
 }
 
 .trade .currency .current .arrow{
@@ -1141,7 +1153,13 @@ header .inline-block .fa-chevron-right{
 }
 
 #line5{
-  right: -5%;
+  right: 0%;
+  transform: rotateX(180deg) scale(.7);
+}
+
+#line6{
+  right: 20%;
+  transform: rotateX(180deg) scale(.7);
 }
 
 .payments  img{
@@ -1162,19 +1180,19 @@ header .inline-block .fa-chevron-right{
 
 .from-left{
   transform: translateX(-150%);
-  opacity: .8;
+  opacity: 0;
   transition: transform ease-in-out 1500ms;
 }
 
 .from-right{
   transform: translateX(150%);
-  opacity: .8;
+  opacity: 0;
   transition: transform ease-in-out 1500ms;
 }
 
 .scale-small{
   transform: scale(.5);
-  opacity: .8;
+  opacity: 0;
   transition: transform ease-in-out 1500ms;
 }
 
@@ -1319,24 +1337,8 @@ header .inline-block .fa-chevron-right{
 }
 
 @media (min-width: 768px) {
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-1\/3 {
-    width: 33.333333%;
   }
 
   .md\:w-1\/4 {
@@ -1384,9 +1386,40 @@ header .inline-block .fa-chevron-right{
     text-align: start;
   }
 
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
 
