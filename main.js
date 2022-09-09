@@ -32,6 +32,17 @@ function incrementCount() {
 } 
 
 
+let cryptoCon = document.querySelectorAll(".crypto-con");
+
+cryptoCon.forEach((crypto, index) => {
+    crypto.addEventListener('click', () => {
+        cryptoCon.forEach(elem =>{
+            elem.classList.remove('current') // remove current class from all crypto containers
+        })
+        crypto.classList.add('current') // add current class to clicked crypto container
+    })});
+
+
 
 
 let left = document.querySelectorAll(".from-left");
@@ -39,6 +50,7 @@ let right = document.querySelectorAll(".from-right");
 let scale = document.querySelectorAll(".scale-small");
 let bottom = document.querySelectorAll(".from-bottom");
 let icons = document.querySelectorAll(".from-left-icons");
+
 
 function counter(){
     let distInView = icons[1].getBoundingClientRect().top - window.innerHeight + 80;
@@ -56,7 +68,6 @@ else{
 
 window.addEventListener('scroll', animation); 
 function animation() {
-    console.log(interval)
     for (let i = 0; i < bottom.length; i++) {
         let elem = bottom[i]
         let distInView = elem.getBoundingClientRect().top - window.innerHeight + 80;

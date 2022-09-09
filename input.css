@@ -24,6 +24,12 @@ header{
     display: grid;
     grid-template-rows: auto 1fr;
 }
+.light--blue-hover:hover{
+    color: #0D0D2B;
+}
+.btn-hover:hover{
+    background-color: #15429c;
+}
 .menu-btn{
     font-size: 1.5rem;
 }
@@ -44,6 +50,7 @@ header .inline-block .fa-chevron-right{
 }
 
 
+
 .shape{
     position: absolute;
 }
@@ -56,13 +63,13 @@ header .inline-block .fa-chevron-right{
 
 #line2{
     position: absolute;
-    top: 40%;
+    top: 52%;
     right: 20%;
     transform: scale(.9);
 }
 #line4{
-    top: 10rem;
-    left: 0;
+    top: 21%;
+    left: -34%;
 }
 #u-shape{
     right: 0;
@@ -89,6 +96,7 @@ header .inline-block .fa-chevron-right{
 }
 .hash-form-container{
 margin-top: -9rem;
+box-shadow: 0rem 1rem 2rem rgb(0, 0, 0, .05);
 }
 .hash-form{
     display: grid;
@@ -102,15 +110,16 @@ margin-top: -9rem;
 .hash-form input, .hash-form select{
 padding: .3rem;
 border: none;
+outline: 0;
+caret-color: black;
+color: black;
 background-color: rgb(0, 0, 0, 0);
 border-bottom: .1rem solid rgb(0, 0, 0, .2);
 }
 .hash-form input::placeholder{
     color: black;
 }
-.hash-form-base{
-    box-shadow: 0rem 1rem 2rem rgb(0, 0, 0, .05);
-}
+
 
 .trade .currency img{
     height: 3.5rem;
@@ -136,6 +145,7 @@ border-bottom: .1rem solid rgb(0, 0, 0, .2);
 
 .mining{
     display: none;
+    font-size: .8rem;
 }
 
 .trade .currency > div:hover{
@@ -149,6 +159,19 @@ display: inline-block;
  }
  .trade .currency > div:hover > .arrow{
     display: none;
+}
+
+/* seleceted crypto currency */
+.trade .currency .current{
+    background-color: #2B076E;
+    color: white;
+    backdrop-filter: blur(250px);
+}
+.trade .currency .current .mining{
+    display: inline-block; 
+}
+.trade .currency .current .arrow{
+    display: none; 
 }
 
 
@@ -171,8 +194,11 @@ transform: rotate(180deg);
 }
 .subscribe-container input{
     padding: .3rem;
+    outline: 0;
     border: none;
     background-color: rgb(0, 0, 0, 0);
+    color: white;
+    caret-color: white;
     border-bottom: .07rem solid white;
     }
 .subscribe-container input::placeholder{
@@ -182,6 +208,7 @@ transform: rotate(180deg);
 #bitcoinVector{
     right: 0%;
     bottom: -3%;
+    z-index: -1;
 }
 
 #diamond{
@@ -208,23 +235,23 @@ transition: transform ease-in-out 1500ms;
 .from-left{
     transform: translateX(-150%);
     opacity: .8;
-    transition: all ease-in-out 1500ms;
+    transition: transform ease-in-out 1500ms;
 }
 .from-right{
     transform: translateX(150%);
     opacity: .8;
-    transition: all ease-in-out 1500ms;
+    transition: transform ease-in-out 1500ms;
 }
 
 .scale-small{
     transform: scale(.5);
     opacity: .8;
-    transition: all ease-in-out 1500ms;
+    transition: transform ease-in-out 1500ms;
 }
 
 .from-bottom{
     transform: translateY(40%);
-    transition: all ease-in-out 1500ms;
+    transition: transform ease-in-out 1500ms;
     opacity: 0;
 }
 
@@ -267,7 +294,7 @@ transition: transform ease-in-out 1500ms;
 
 .menu .fa-xmark{
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 10%;
 }
 
@@ -298,7 +325,7 @@ transition: transform ease-in-out 1500ms;
 
 @media(min-width:376px) and (max-width:640px){
     html{
-        font-size: 14px;
+        font-size: 15px;
     }
     .hash-form{
         grid-template-columns: 1fr;
@@ -316,7 +343,7 @@ transition: transform ease-in-out 1500ms;
 
 @media(max-width:375px){
     html{
-        font-size: 13px;
+        font-size: 14px;
     }
     .hash-form{
         grid-template-columns: 1fr;
