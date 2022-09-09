@@ -25,10 +25,10 @@ header{
     grid-template-rows: auto 1fr;
 }
 .light--blue-hover:hover{
-    color: #0D0D2B;
+    color: #5185ed;
 }
 .btn-hover:hover{
-    background-color: #15429c;
+    background-color: #3671E9;
 }
 .menu-btn{
     font-size: 1.5rem;
@@ -221,6 +221,7 @@ transform: rotate(180deg);
 .payments  img{
   padding: .5rem .5rem;
   height: 2rem;
+  cursor: pointer;
 }
 .social{
     font-size: 1.2rem;

@@ -589,10 +589,6 @@ video {
   position: relative;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -921,11 +917,11 @@ header{
 }
 
 .light--blue-hover:hover{
-  color: #0D0D2B;
+  color: #5185ed;
 }
 
 .btn-hover:hover{
-  background-color: #15429c;
+  background-color: #3671E9;
 }
 
 .menu-btn{
@@ -1151,6 +1147,7 @@ header .inline-block .fa-chevron-right{
 .payments  img{
   padding: .5rem .5rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 .social{
