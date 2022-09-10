@@ -63,7 +63,7 @@ header .inline-block .fa-chevron-right{
     border-radius: 100%;
     background-color: white;
     font-size: .7rem;
-    /*animation: Slidein infinite 1500ms ease-in-out;*/
+    /*animation: Slidein infinite 1000ms ease-in-out;*/
 }
 
 
@@ -265,29 +265,29 @@ footer .social{
 .from-left-icons{
 transform: translateX(-90%);
 opacity: 0;
-transition: transform ease-in-out 1500ms;
+transition: transform ease-in-out 1000ms;
 }
 
 .from-left{
     transform: translateX(-150%);
     opacity: 0;
-    transition: transform ease-in-out 1500ms;
+    transition: transform ease-in-out 1000ms;
 }
 .from-right{
     transform: translateX(150%);
     opacity: 0;
-    transition: transform ease-in-out 1500ms;
+    transition: transform ease-in-out 1000ms;
 }
 
 .scale-small{
     transform: scale(.5);
     opacity: 0;
-    transition: transform ease-in-out 1500ms;
+    transition: transform ease-in-out 1000ms;
 }
 
 .from-bottom{
     transform: translateY(40%);
-    transition: transform ease-in-out 1500ms;
+    transition: transform ease-in-out 1000ms;
     opacity: 0;
 }
 
