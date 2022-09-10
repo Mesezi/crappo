@@ -54,7 +54,7 @@ let icons = document.querySelectorAll(".from-left-icons");
 
 function counter(){
     let distInView = icons[1].getBoundingClientRect().top - window.innerHeight + 80;
-    if (distInView >= -900 && distInView <= 0){
+    if (distInView >= -1000 && distInView <= 0){
         incrementCount();
 }
 else{
@@ -71,7 +71,7 @@ function animation() {
     for (let i = 0; i < bottom.length; i++) {
         let elem = bottom[i]
         let distInView = elem.getBoundingClientRect().top - window.innerHeight + 80;
-        if (distInView >= -900 && distInView <= 0) {
+        if (distInView >= -1000 && distInView <= 0) {
            elem.classList.add('slideBottom')
         } else {
             elem.classList.remove('slideBottom')
@@ -81,7 +81,7 @@ function animation() {
     for (let i = 0; i < left.length; i++) {
         let elem = left[i]
         let distInView = elem.getBoundingClientRect().top - window.innerHeight + 80;
-        if  (distInView >= -900 && distInView <= 0) {
+        if  (distInView >= -1000 && distInView <= 0) {
            elem.classList.add('slideLeft')
         } else {
             elem.classList.remove('slideLeft')
@@ -91,7 +91,7 @@ function animation() {
     for (let i = 0; i < right.length; i++) {
         let elem = right[i]
         let distInView = elem.getBoundingClientRect().top - window.innerHeight + 80;
-        if  (distInView >= -900 && distInView <= 0) {
+        if  (distInView >= -1000 && distInView <= 0) {
            elem.classList.add('slideRight')
         } else {
             elem.classList.remove('slideRight')
@@ -101,7 +101,7 @@ function animation() {
     for (let i = 0; i < scale.length; i++) {
         let elem = scale[i]
         let distInView = elem.getBoundingClientRect().top - window.innerHeight + 80;
-        if (distInView >= -900 && distInView <= 0) {
+        if (distInView >= -1000 && distInView <= 0) {
            elem.classList.add('scale')
         } else {
             elem.classList.remove('scale')
@@ -111,7 +111,7 @@ function animation() {
     for (let i = 0; i < icons.length; i++) {
         let elem = icons[i]
         let distInView = elem.getBoundingClientRect().top - window.innerHeight + 80
-        if (distInView >= -900 && distInView <= 0) {
+        if (distInView >= -1000 && distInView <= 0) {
            elem.classList.add('slideLeft')
         } else {
             elem.classList.remove('slideLeft')

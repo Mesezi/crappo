@@ -599,10 +599,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -789,6 +785,11 @@ video {
   padding-right: 1rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -807,11 +808,6 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pr-3 {
@@ -836,24 +832,24 @@ video {
   line-height: 1;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -895,15 +891,20 @@ video {
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Oxanium', cursive;
+  font-weight: 500;
   color: white;
 }
 
-h1, h2{
+h1{
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 4rem;
+}
+
+h2{
+  font-size: 1.9rem;
+  font-weight: 600;
 }
 
 .login-register > .bg-mainBlue{
@@ -1061,9 +1062,9 @@ header .inline-block .fa-chevron-right{
 }
 
 .mining i{
-  height: 1.5rem;
-  width:1.5rem;
-  line-height: 1.5rem;
+  height: 2.3rem;
+  width:2.3rem;
+  line-height: 2.3rem;
   border-radius: 100%;
   text-align: center;
   background-color: white;
@@ -1353,8 +1354,8 @@ header .inline-block .fa-chevron-right{
     max-width: 24rem;
   }
 
-  .md\:max-w-lg {
-    max-width: 32rem;
+  .md\:max-w-xl {
+    max-width: 36rem;
   }
 
   .md\:flex-row {
@@ -1395,13 +1396,14 @@ header .inline-block .fa-chevron-right{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .lg\:flex {
     display: flex;
   }
